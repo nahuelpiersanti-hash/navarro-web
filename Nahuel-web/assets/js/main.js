@@ -8,14 +8,10 @@ function loadComponent(id, path) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  const inPages = window.location.pathname.includes("/pages/");
-
-  const componentPath = inPages ? "../components/" : "components/";
-
-  loadComponent("header", componentPath + "header.html");
-  loadComponent("footer", componentPath + "footer.html");
-
+  loadComponent("header", "/components/header.html");
+  loadComponent("footer", "/components/footer.html");
 });
+
+
 
 
